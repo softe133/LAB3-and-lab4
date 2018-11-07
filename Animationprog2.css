@@ -1,0 +1,127 @@
+/* *{
+    border: 3px solid red;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}  */
+
+body{
+    background: linear-gradient(to right, #6788ca,
+    #b6a05f, #5d8dca);
+}
+.container{
+    text-align: center;
+    margin-top: 30%;
+    width: 1220px;
+   
+}
+.block{
+    margin-top: 40%;
+}
+
+.circle{
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    border-radius: 5em;
+    animation: popup .5s infinite; 
+}
+.circle:nth-child(1){
+    background-color: purple;
+    
+    animation-delay: .2s;
+}
+
+.circle:nth-child(2){
+    background-color: olive;
+    animation-delay: .35s;
+    
+  /*  animation-direction: alternate-reverse; */
+}
+.circle:nth-child(3){
+    background-color: firebrick;
+    animation-delay: .25s;
+    animation-play-state: paused;
+}
+
+.circle:nth-child(4){
+    background-color: blue;
+    animation-delay: .35s;
+    
+}
+.circle:nth-child(5){
+    background-color:  rgb(71, 26, 28);
+    animation-delay: .45s;
+    animation-timing-function: ease-in;
+}
+.panel{
+    width: 700px;
+    height: 5px;
+    border-radius: 2em;
+    background: rgb(71, 26, 28);
+    margin: auto;
+}
+
+@keyframes popup{
+    0%{
+      transform: translateY(0px);
+    }
+    50%{
+      transform: translateY(-250px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+}
+ .arrow{
+    position: absolute;
+    font-size: 100px;
+    margin: 150px 50px;
+    animation: bouncearrow .8s infinite;
+    color: green;
+    animation-direction: alternate;
+    animation-fill-mode:both;  
+    animation-iteration-count: 3;
+    
+} 
+@keyframes bouncearrow{
+    0%{
+       top: 0px;
+       font-size: 20px;
+    }
+    50%{
+      top: 300px;
+      color:crimson;
+      font-size: 150px;
+    }
+    100%{
+        font-size: 20px;
+        top: 0px;
+    }
+}
+
+ .star{
+    position: absolute;
+    font-size: 50px;
+    margin: 150px 1050px;
+    animation: bouncestar .8s infinite;
+    color: indigo;
+    animation-direction: alternate;
+   animation-fill-mode:both;  
+   
+} 
+@keyframes bouncestar{
+    0%{
+        top: 0px;
+        font-size: 20px;
+     }
+     50%{
+       top: 300px;
+       color: brown;
+       font-size: 150px;
+     }
+     100%{
+         font-size: 100px;
+         top: 0px;
+     }
+ } 
