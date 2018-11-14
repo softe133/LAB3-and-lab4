@@ -1,0 +1,48 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+.container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+}
+#header{
+	background-color: tomato;
+	order:0;
+	flex-basis: 100%;
+	padding: 50px;
+
+}
+#Aside1{
+	background-color: gold;
+	order:1;
+	flex-basis: 25%;
+	padding: 75px;
+}
+#main{
+	background-color: cyan;
+	order: 2;
+	flex-basis: 50%;
+	padding: 150px;
+}
+#Aside2{
+	background-color: pink;
+	order:3;
+	flex-basis: 25%;
+	padding: 75px;
+}
+#footer{
+	background-color: green;
+	order: 4;
+	flex-basis: 100%;
+	padding: 50px;
+}
+p{
+	text-align: center;
+	text-decoration-style: bold;
+}

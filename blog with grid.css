@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container{
+	display: grid;
+	grid-template-rows: [first_row]1fr  [second_row]3fr  [third_row]1fr;
+	grid-template-columns: [first_col]1fr [second_col]3fr [third_col]1fr;
+	justify-content: space-around;
+
+}
+#header{
+      background-color: tomato;
+      grid-column: first_col/span 3;
+      width: 100%; 
+      padding: 50px;
+}
+#Aside1{
+      background-color: gold;
+      width: 100%;
+      height: 100%;
+      padding: 75px;
+}
+#main{
+    background-color: cyan;
+    width: 100%;
+    height: 100%;
+    padding: 150px;
+}
+#Aside2{
+     background-color: pink;
+     width: 100%;
+     height: 100%;
+     padding: 75px;
+}
+#footer{
+       background-color: green;
+       grid-column: first_col/span 3;
+       width: 100%;
+       padding: 50px;
+}
+p{
+	text-align: center;
+}
